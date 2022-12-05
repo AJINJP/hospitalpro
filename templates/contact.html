@@ -1,0 +1,29 @@
+{% extends 'base.html'%}
+
+{%block title%} contact {%endblock%}
+
+
+{% block content%}
+
+<h1 style="text-align: center;">For any other complaint or enquery</h1>
+<hr>
+<div class="container w-50 p-3 text-center my-3 bg-info">
+
+    <form action="" method="POST">{%csrf_token%}
+        <label>Your name</label><br>
+            <input type="text" placeholder="first and last name"> <br>
+            <label>mobile number</label><br>
+            <input type="text" placeholder="phone number"> <br>
+            <label>Adress</label><br>
+            <textarea name="" id="" cols="30" rows="10"></textarea><br>
+            <label>email</label><br>
+            <input type="email" placeholder="email">
+    </form>
+</div>
+
+
+
+
+
+
+{%endblock%}
